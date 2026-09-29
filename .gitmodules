@@ -1,0 +1,3 @@
+[submodule "ayademo/book"]
+	path = ayademo/book
+	url = https://github.com/aya-rs/book.git
