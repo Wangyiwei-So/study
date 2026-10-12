@@ -1,0 +1,17 @@
+[package]
+name = "uprobe-ebpf"
+version = "0.1.0"
+edition = "2024"
+
+# 独立构建，避免用户态依赖被拿去编译成 eBPF。
+[workspace]
+
+[dependencies]
+aya-ebpf = "=0.2.1"
+aya-log-ebpf = "=0.2.0"
+
+[profile.release]
+panic = "abort"
+lto = true
+codegen-units = 1
+debug = 2

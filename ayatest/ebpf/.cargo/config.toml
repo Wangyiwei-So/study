@@ -1,0 +1,9 @@
+[build]
+target = "bpfel-unknown-none"
+
+[target.bpfel-unknown-none]
+linker = "bpf-linker"
+
+# 这是被观测进程的 CPU 架构，不是 eBPF 虚拟机架构。
+# 本示例面向当前 x86_64 Linux 环境；aarch64 机器请改为 "aarch64"。
+rustflags = ['--cfg', 'bpf_target_arch="x86_64"']
