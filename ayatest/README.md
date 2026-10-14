@@ -1,5 +1,7 @@
 # Aya uprobe 入门示例
 
+性能对比见 [bench/README.md](bench/README.md)：独立测试 Aya、bpftrace 和 bpftime 的计数型 uprobe 开销。
+
 本例观察 `uprobe_demo.c` 中每秒执行一次的 `int add(int a, int b)`，打印调用进程、线程和两个参数。代码包含中文注释，建议先读 `ebpf/src/main.rs`，再读 `src/main.rs`。
 
 ## 三个程序的分工

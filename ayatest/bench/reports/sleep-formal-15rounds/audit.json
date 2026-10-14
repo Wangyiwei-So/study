@@ -1,0 +1,12 @@
+{
+  "valid": 300,
+  "failed": 0,
+  "count_verified": 225,
+  "shutdown_warning_samples": 75,
+  "repeat_signal_samples": 1,
+  "max_shutdown_signals": 2,
+  "numpy": "1.24.4",
+  "matplotlib": "3.7.5",
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 20261013
+}
